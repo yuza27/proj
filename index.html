@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 1 Month Anniversary 💕</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-heart">💕</div>
+      <p class="loading-text">Memuat Moment Special...</p>
+      <div class="loading-bar"><div class="loading-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ===== FLOATING HEARTS BACKGROUND ===== -->
+  <div id="hearts-container" aria-hidden="true"></div>
+
+  <!-- ===== MUSIC TOGGLE ===== -->
+  <button id="music-btn" title="Toggle Music" aria-label="Toggle background music">
+    <span id="music-icon">🎵</span>
+    <span id="music-label">Play Music</span>
+  </button>
+  <audio id="bg-music" loop>
+    <source src="panah_asmara.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ===== NAVIGATION DOTS ===== -->
+  <nav id="nav-dots" aria-label="Section navigation">
+    <button class="dot active" data-section="0" title="Home"></button>
+    <button class="dot" data-section="1" title="Our Story"></button>
+    <button class="dot" data-section="2" title="Gallery"></button>
+    <button class="dot" data-section="3" title="Reasons"></button>
+    <button class="dot" data-section="4" title="Love Letter"></button>
+    <button class="dot" data-section="5" title="Surprise"></button>
+    <button class="dot" data-section="6" title="Final"></button>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section id="hero" class="section">
+      <div class="hero-inner">
+        <div class="hero-badge">✨ 1 Bulan Bersama ✨</div>
+        <h1 class="hero-title">Happy 1 Month<br/><span class="gradient-text">Anniversary</span> <span class="hero-heart">❤️</span></h1>
+        <p class="hero-subtitle">
+          <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </p>
+        <div class="names-container">
+          <span class="name-left">Sasa</span>
+          <div class="center-heart-wrapper">
+            <div class="pulse-heart">💗</div>
+          </div>
+          <span class="name-right">Yusaa</span>
+        </div>
+        <a href="#story" class="cta-btn scroll-to" data-target="story">
+          <span>Memulai Kisah Kita</span>
+          <div class="btn-arrow">↓</div>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">scroll down</div>
+    </section>
+
+    <!-- ===== SECTION 2: OUR STORY TIMELINE ===== -->
+    <section id="story" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Perjalanan ku </span>
+          <h2 class="section-title">Kisahku </h2>
+          <p class="section-subtitle">Setiap momen bersamamu adalah harta yang aku simpan dekat di hatiku.</p>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item reveal" data-delay="0">
+            <div class="timeline-dot">💫</div>
+            <div class="timeline-card">
+              <div class="timeline-date">Day 1</div>
+              <h3>Pertama kali pertemu</h3>
+              <p>Berawal kita bertemu di aplikasi weelife aku dan sayang saling chat dan saling bercanda satu sama lain.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="100">
+            <div class="timeline-dot">💬</div>
+            <div class="timeline-card">
+              <div class="timeline-date">Minggu 1</div>
+              <h3>Aku mulai akrab</h3>
+              <p>Aku jadi sering chatan sama ayang semenjak awal kita bertama kali ketemu itu, saling support, dan saling bercanda rasanya asik sekali membayangkan kenangan itu.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="200">
+            <div class="timeline-dot">💑</div>
+            <div class="timeline-card">
+              <div class="timeline-date">Finally</div>
+              <h3>Waktu sayang menyatakan cinta </h3>
+              <p>Asli itu moment aku ingat banget pas aku dan sayang nembak aku dengan nada bercanda dan aku malah meng iya kan nya lagi aaa.</p>
+            </div>
+          </div>
+
+        
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: PHOTO GALLERY ===== -->
+    
+
+          <!-- Gallery cards with placeholder romantic imagery using CSS art -->
+          
+      <!-- LIGHTBOX -->
+      <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+        <button id="lightbox-close" aria-label="Close lightbox">✕</button>
+        <div id="lightbox-content">
+          <div id="lightbox-img-wrap"></div>
+          <p id="lightbox-caption"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: REASONS I LOVE YOU ===== -->
+    <section id="reasons" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Dari Hatiku Yang Paling Dalam</span>
+          <h2 class="section-title">Alasan aku menyukaimu </h2>
+          
+        </div>
+        <div class="reasons-grid">
+
+          <div class="reason-card reveal" data-delay="0">
+            <div class="reason-front">
+              <div class="reason-icon">☀️</div>
+              <h3>Keceriaan mu </h3>
+            </div>
+            <div class="reason-back">
+              <p>Cara sayang berekspresi yang bikin aku betah sama ayaang.</p>
+            </div>
+          </div>
+
+
+          <div class="reason-card reveal" data-delay="200">
+            <div class="reason-front">
+              <div class="reason-icon">🤗</div>
+              <h3>Kehangatan ayang</h3>
+            </div>
+            <div class="reason-back">
+              <p>Cara ayang memperlakukan ku bikin aku sangat nyaman dan aman.</p>
+            </div>
+          </div>
+
+
+          <div class="reason-card reveal" data-delay="500">
+            <div class="reason-front">
+              <div class="reason-icon">🌟</div>
+              <h3>Untuk sayang ku </h3>
+            </div>
+            <div class="reason-back">
+              <p>Aku suka moment kebersamaan bersama ayang yang penuh candaan dan kenyamanan.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: LOVE LETTER ===== -->
+    <section id="letter" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Written With Love</span>
+          <h2 class="section-title">A Letter For You</h2>
+        </div>
+        <div class="letter-wrapper reveal">
+          <div class="letter-paper">
+            <div class="letter-decoration top">💌</div>
+            <p class="letter-salutation">Untuk sayang ku,</p>
+            <div class="letter-body" id="letter-text"></div>
+            <p class="letter-closing">Forever yours,<br/><span class="letter-signature">With all my love ❤️</span></p>
+            <div class="letter-decoration bottom">🌹</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6: SURPRISE ===== -->
+    <section id="surprise" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Untuk ayang nih</span>
+          <h2 class="section-title">Sedikit hadiah kecil</h2>
+          <p class="section-subtitle">Aku telah menyimpan sesuatu yang istimewa hanya untuk momen ini...</p>
+        </div>
+        <div class="surprise-center reveal">
+          <button id="surprise-btn" class="surprise-button">
+            <span class="surprise-btn-text">Click me 🎁</span>
+            <div class="surprise-btn-glow"></div>
+          </button>
+        </div>
+        <!-- Surprise Modal -->
+        <div id="surprise-modal" role="dialog" aria-modal="true" aria-label="Surprise message">
+          <div class="surprise-modal-inner">
+            <button id="modal-close" aria-label="Close surprise">✕</button>
+            <div class="modal-emoji">🌟</div>
+            <h3>Tadaa </h3>
+            <p>Gimana website nya bagus bukan hehe aku gak sabar liat reaksi ayang nya gimana. dan juga aku mau ngucapin rasa terimakasih ku sebesar besar nya ke ayangkuh.</p>
+            <p class="modal-extra">Semoga hubungan kita bisa tetap terus bersama walaupun banyak rintangan tetep aja aku dan sayang akan terus menjalin hubungan ini. 🥂✨</p>
+          </div>
+        </div>
+        <!-- Confetti container -->
+        <div id="confetti-container" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7: FINAL ===== -->
+    <section id="final" class="section">
+      <div class="final-inner">
+        <div class="final-hearts reveal">💕</div>
+        <h2 class="final-title reveal">Terimakasih sayang<br/>sudah datang ke kehidupan ku <span class="gradient-text">❤️</span></h2>
+        <p class="final-sub reveal">Selama nya aku akan bersama ayang.</p>
+        <div class="final-heart-beat reveal">💗</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+src="script.js"></script>
+</body>
+</html>
